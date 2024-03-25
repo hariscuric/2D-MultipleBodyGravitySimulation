@@ -20,7 +20,7 @@ class system:
         self.G = gravitationalConstant
 
     def simulate(self, duration : float, timestep : float) -> list[list[vector]]:
-        numOfSteps = duration / timestep
+        numOfSteps = int(duration / timestep)
         positions = []
         for i in range(numOfSteps):
 
@@ -37,7 +37,7 @@ class system:
                 self.bodies[ii].A = rdotdot
                 self.bodies[ii].updatePositionVelocity(timestep)
 
-            return positions
+        return positions
 
             
 
@@ -50,7 +50,7 @@ def computeForces(bodies : list[body], gravitationalConstant : float):
         F_j = []
         for ii, bb in enumerate(bodies):
             if i == ii:
-                F__ = 0
+                F__ = vector(0, 0)
             else:
                 r = bb.R - b.R
                 F__ = (r) * (G*bb.m*b.m/((r.abs())**3))
