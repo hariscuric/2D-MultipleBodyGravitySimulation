@@ -23,4 +23,10 @@ class vector:
     def abs(self):
         absoluteValue = m.sqrt(self.X**2 + self.Y**2)
         return absoluteValue
+    
+    def __radd__(self, other):
+        if other == 0:
+            return self
+        else:
+            return self.__add__(other)
 
