@@ -7,7 +7,7 @@ This program is still in development. Testing is in progress... Animation should
 Here is a snapshot from the animation:
 
 
-
+![Simulation Snip 1](/PlanetMotion.gif)
 ![Simulation Snip 2](/snapshot.PNG)
 
 
