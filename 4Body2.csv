@@ -1,0 +1,10 @@
+#Initial configuration of the gravitational system. Line 6 gives values of three parameters specified in line 4.
+#Lines 7 - ... give parameters that define bodies of the system. Their format is specified in line 5.
+#Total number of bodies is number of lines of this file minus 5
+simulationTimeStep, AnimationDuration, GravitationalConstant
+PositionX0,  PositionY0,  VelocityX0,  VelocityY0,  Mass
+0.0001,       25,      0.7
+1.0,     0.0,     0.0,     0.0,     1.0
+-1.0,    0.0,     0.0,     0.0,    1.0
+0.0,     1.0,     -0.5,     0.0,     1.0
+0.0,    -1.0,     0.5,      0.0,    1.0
